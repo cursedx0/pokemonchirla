@@ -1,2 +1,1 @@
-madura chaval
-
+UBUNTU = 💩💩💩💩💩💩
