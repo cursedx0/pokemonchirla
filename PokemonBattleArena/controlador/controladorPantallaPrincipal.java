@@ -20,11 +20,7 @@ public class controladorPantallaPrincipal implements ActionListener{
 				pb.setVisible(true);
 				posJugador++;
 			}
-			for(int j = 0;j<Integer.parseInt(PantallaPrincipal.getPantallaPrincipal().getNumBots());j++) {
-				PantallaJugador pb1 = new PantallaJugador(PantallaPrincipal.getPantallaPrincipal().getNumPokemons(), "Bot"+(j+1), ListaJugadores.getListaJugadores().getJugadorPos(posJugador));
-				pb1.setVisible(true);
-				posJugador++;
-			}			
+		
 		}
 	}
 
