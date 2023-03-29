@@ -9,7 +9,6 @@ public class PokemonFuego extends Pokemon{
 		super(posicion,Tipo.FUEGO);
 		// TODO Auto-generated constructor stub
 	}
-<<<<<<< HEAD
 	
 	protected int bono(Tipo pTipo) {
 		int multiplicador = 1;
@@ -18,7 +17,5 @@ public class PokemonFuego extends Pokemon{
 		}
 		return multiplicador;
 	}
-=======
->>>>>>> branch 'master' of https://github.com/cursedx0/pokemonchirla.git
 
 }

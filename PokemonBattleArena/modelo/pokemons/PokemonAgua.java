@@ -8,7 +8,6 @@ public class PokemonAgua extends Pokemon{
 	public PokemonAgua(int posicion) {
 		super(posicion, Tipo.AGUA);
 	}
-<<<<<<< HEAD
 	
 	protected int bono(Tipo pTipo) {
 		int multiplicador = 1;
@@ -17,7 +16,5 @@ public class PokemonAgua extends Pokemon{
 		}
 		return multiplicador;
 	}
-=======
->>>>>>> branch 'master' of https://github.com/cursedx0/pokemonchirla.git
 
 }

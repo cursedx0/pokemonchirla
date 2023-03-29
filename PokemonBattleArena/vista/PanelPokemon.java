@@ -84,7 +84,6 @@ public class PanelPokemon extends JPanel implements Observer{
 			progressBarEuforia = new JProgressBar();
 			progressBarEuforia.setStringPainted(true);
 			progressBarEuforia.setString("EUFORIA");
-<<<<<<< HEAD
 			progressBarEuforia.setForeground(Color.RED);
 		}
 		return progressBarEuforia;
@@ -118,37 +117,6 @@ public class PanelPokemon extends JPanel implements Observer{
 			}
 			if(Integer.parseInt(array[2]) < this.pokemon.getVidaMaxima()/5) {
 				this.getProgressBarVida().setForeground(Color.RED);
-=======
-			progressBarEuforia.setForeground(Color.BLACK);
-		}
-		return progressBarEuforia;
-	}
-	private JPanel getPanel() {
-		if (panel == null) {
-			panel = new JPanel();
-			panel.setLayout(new GridLayout(0, 1, 1, 2));
-			panel.add(getProgressBarVida());
-			panel.add(getProgressBarEuforia());
-		}
-		return panel;
-	}
-
-	@Override
-	public void update(Observable o, Object arg) {
-		// TODO Auto-generated method stub
-		if(o instanceof Pokemon) {
-			String[] array = (String[]) arg;
-			this.getTxtrAtaque().setText("Ataque: " +array[0] +"\nDefensa: " +array[1] +"\nVida: " +array[2] +"/" +array[3] +"\nTipo: " +array[4]);
-			
-			if(this.pokemon.getVida() >= this.pokemon.getVidaMaxima()/2) {
-				this.getProgressBarVida().setBackground(Color.GREEN);
-			}
-			if(this.pokemon.getVida() < this.pokemon.getVidaMaxima()/2 && this.pokemon.getVida() >= this.pokemon.getVidaMaxima()/5) {
-				this.getProgressBarVida().setBackground(Color.ORANGE);
-			}
-			if(this.pokemon.getVida() < this.pokemon.getVidaMaxima()/5) {
-				this.getProgressBarVida().setBackground(Color.RED);
->>>>>>> branch 'master' of https://github.com/cursedx0/pokemonchirla.git
 			}
 		}
 	}

@@ -2,11 +2,9 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-<<<<<<< HEAD
 import java.util.Random;
 
 import modelo.Juego;
-import modelo.Jugador;
 import modelo.ListaJugadores;
 import vista.PantallaJugador;
 import vista.PantallaPrincipal;
@@ -14,7 +12,7 @@ import vista.PantallaPrincipal;
 public class controladorPantallaPrincipal implements ActionListener{
 	
 	private Random random = new Random();
-	
+	private int i = 0;
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -36,30 +34,10 @@ public class controladorPantallaPrincipal implements ActionListener{
 				posJugador++;
 			}	
 			
-			int i = random.nextInt(ListaJugadores.getListaJugadores().tamañoLista());
+			i = random.nextInt(ListaJugadores.getListaJugadores().tamañoLista());
 			ListaJugadores.getListaJugadores().getJugadorPos(i).setTurno(true);		
 			System.out.println("Es el turno del jugador: "+ListaJugadores.getListaJugadores().getJugadorPos(i).getNombre());
-			for(int x = 0; x<ListaJugadores.getListaJugadores().tamañoLista(); x++) {
-				
 			}
-			
-	}
-=======
-
-import modelo.Juego;
-import modelo.ListaJugadores;
-import vista.PantallaJugador;
-import vista.PantallaPrincipal;
-
-public class controladorPantallaPrincipal implements ActionListener{
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-
-	
-		
-		}
->>>>>>> branch 'master' of https://github.com/cursedx0/pokemonchirla.git
 	}
 
 
