@@ -2,6 +2,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+<<<<<<< HEAD
 import java.util.Random;
 
 import modelo.Juego;
@@ -43,6 +44,22 @@ public class controladorPantallaPrincipal implements ActionListener{
 			}
 			
 	}
+=======
+
+import modelo.Juego;
+import modelo.ListaJugadores;
+import vista.PantallaJugador;
+import vista.PantallaPrincipal;
+
+public class controladorPantallaPrincipal implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+	
+		
+		}
+>>>>>>> branch 'master' of https://github.com/cursedx0/pokemonchirla.git
 	}
 
 

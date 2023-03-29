@@ -24,6 +24,7 @@ public class ListaPokemons {
 	public Pokemon getPosicionPokemon(int pPos) {
 		return (Pokemon) this.lista.get(pPos);
 	}
+<<<<<<< HEAD
 	public int getTamaño() {
 		return this.lista.size();
 	}
@@ -50,4 +51,23 @@ public class ListaPokemons {
 		return lista.stream()
 				.collect(Collectors.groupingBy(Pokemon::getTipo, Collectors.averagingInt(Pokemon::getVida)));
 	}*/
+=======
+
+	private List<Pokemon> filtro(Predicate<Pokemon> p) {
+		return lista.stream().filter(p).toList();
+	}
+
+	public List<Pokemon> filtrarPorTipo(Tipo pTipo) {
+		return filtro(p -> p.tipo.equals(pTipo));
+	}
+
+	public Map<Tipo, List<Pokemon>> agruparPorTipo() {
+		return lista.stream().collect(Collectors.groupingBy(Pokemon::getTipo));
+	}
+
+	public Map<Tipo, Double> agruparPorTipoNombre() {
+		return lista.stream()
+				.collect(Collectors.groupingBy(Pokemon::getTipo, Collectors.averagingInt(Pokemon::getVida)));
+	}
+>>>>>>> branch 'master' of https://github.com/cursedx0/pokemonchirla.git
 }
