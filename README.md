@@ -1,1 +1,2 @@
-UBUNTU = 💩💩💩💩💩💩
+UBUNTU >>>>>> Windows de mierda
+
